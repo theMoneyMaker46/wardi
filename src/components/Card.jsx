@@ -1,28 +1,31 @@
 import React from "react";
 
-const cardStyle = {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', /* Adjust the width as needed */
-        gap: '20px'
+const productImg = {
+  width: '18rem',
+  height: '18rem',
+  backgroundColor: '#F8FBF4'
 };
 
-function Card() {
-    return (
-        <div className="card cardStyle" style={{"width": "18rem", "textAlign" : "center"}}>
-            <br></br>
-            <div>
-                <img src="/favicon.ico" alt="" />
-                <div className="card-body">
-                    <h3>Brand Name</h3>
-                    <h4>Product Name</h4>
-                    <p>Price: $10.99</p>
-                    <p>discount price</p>
-                    <div>ratings</div>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
+
+const Card = ({ brand, productName, price, discountPrice, imgSrc, rating }) => {
+  return (
+    <div className="card" style={{ width: '18rem', textAlign: 'center' }}>
+      <div>
+        <img style={productImg} src={imgSrc} alt="" />
+        <div className="card-body custom-card-body">
+          <h6>{brand}</h6>
+          <p className="productName">{productName}</p>
+          <div>
+          <p>Price : Rs. {discountPrice} <label className="price"><strong>{price}</strong></label> /meter</p>
+          </div>
+          <div>Ratings {rating.toFixed(2)}⭐
+          </div>
+          <br></br>
+          <button className="btn btn-primary">Add to Cart</button>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default Card;

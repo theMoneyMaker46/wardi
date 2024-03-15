@@ -1,22 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import Header from './components/Header';
-import Card from './components/Card';
-
-const brCss = {
-  border: '0px solid translucent'
-};
+import './styles/App.css';
 
 function App() {
   return (
-    <div className='body'>
-    <Header />
-    <br style={brCss}></br>
-    <Card />
-    <Card />
-    <Card />
-    </div>
+      <div>
+        <Header />
+        <br></br>
+      </div>
   );
-}
-//Added   
+};
+
 export default App;
