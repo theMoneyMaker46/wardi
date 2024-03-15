@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  position: relative;
+  margin: 20px 0;
+  border: 0px;
+}
+.card-body {
+  text-align: left;
+  padding: 10px 0;
+}
+.price {
+  text-decoration: line-through;
+}
+.productName {
+  font-family: Arial, sans-serif;
+}
+
+.header-element {
+  margin: 0 2rem 0 0;
+}
+
