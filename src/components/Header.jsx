@@ -1,12 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import ProductList from './ProductList';
-import App from '../App';
 
 function Header() {
 
   return (
-    <Router>
       <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
@@ -20,10 +16,11 @@ function Header() {
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item header-element">
                   <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  {/* <Link to="/" class="nav-link active">Home</Link> */}
                 </li>
                 <li class="nav-item header-element">
                   <a class="nav-link" href='/shop' >Shop</a>
-                  {/* <Link to="/shop" className="nav-link">Shop</Link> */}
+                  {/* <Link to="/shop" class="nav-link">Shop</Link> */}
                 </li>
                 <li class="nav-item header-element">
                   <a class="nav-link" href="#">Categories</a>
@@ -45,12 +42,7 @@ function Header() {
             </div>
           </div>
         </nav>
-        <Routes>
-         
-          <Route path="/shop" element={<ProductList />} />
-        </Routes>
       </div>
-    </Router>
   );
 }
 

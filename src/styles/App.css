@@ -57,3 +57,17 @@
   margin: 0 2rem 0 0;
 }
 
+.category-container {
+  margin: 50px 0px;
+  background-color: #D2E3C8;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+}
+
+.grid .card {
+  margin: 50px;
+}
+

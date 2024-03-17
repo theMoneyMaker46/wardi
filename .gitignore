@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Ignore Google_0Auth.json file
+Google_OAuth.json
+
 # testing
 /coverage
 
