@@ -6,7 +6,7 @@ const categoryCard = {
 }
 const categoryImg = {
     "padding":"8px 8px 0px 8px",
-    "border-radius": "15px 15px 0 0",
+    "borderRadius": "15px 15px 0 0",
     "height": "16rem"
 }
 
@@ -19,7 +19,7 @@ function Category() {
                     <div class="card" style={categoryCard}>
                         <img src="./images/khaki.jpg" style={categoryImg} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <p class="card-text" style={{"text-align":"center"}}>Cloth</p>
+                            <p class="card-text" style={{"textAlign":"center"}}>Cloth</p>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ function Category() {
                         <div class="card" style={categoryCard}>
                             <img src="./images/landing_page/stitching.jpg" style={categoryImg} class="card-img-top" alt="..." />
                             <div class="card-body">
-                                <p class="card-text" style={{"text-align":"center"}}>Stitched</p>
+                                <p class="card-text" style={{"textAlign":"center"}}>Stitched</p>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function Category() {
                         <div class="card" style={categoryCard}>
                             <img src="./images/landing_page/flap.png" style={categoryImg} class="card-img-top" alt="..." />
                             <div class="card-body">
-                                <p class="card-text" style={{"text-align":"center"}}>Accessories</p>
+                                <p class="card-text" style={{"textAlign":"center"}}>Accessories</p>
                             </div>
                         </div>
                     </div>

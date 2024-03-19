@@ -1,5 +1,6 @@
 import React from 'react';
-
+import SignIn from './SignIn';
+import '../styles/Header2.css';
 function Header() {
 
   return (
@@ -35,7 +36,7 @@ function Header() {
               <div>
                 <img className='header-element' src='./images/e-commerce (1).png' alt='wishlist-img' />
                 <img className='header-element' src='./images/shopping-bag (1).png' alt='cart-img' />
-                <img className='header-element' src='./images/user.png' alt='user-img' />
+                <img className='header-element' src='./images/person.png' alt='user-img' /> {/*<SignIn />*/}
               </div>
               <button class="btn btn-outline-primary me-2">Sign Up</button>
               <button class="btn btn-outline-success me-2">Login</button>
