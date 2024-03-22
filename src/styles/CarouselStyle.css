@@ -1,0 +1,11 @@
+.carousel-container {
+    width: 80%; /* Adjust the width as per your requirement */
+    margin: 0% 10%; /* Center the carousel horizontally */
+
+}
+  
+  .landing-img {
+    width: 100%; /* Ensure images don't exceed the container width */
+    height: 30rem; /* Maintain aspect ratio */
+    border-radius: 20px;
+  }

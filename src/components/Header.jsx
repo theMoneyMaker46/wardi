@@ -1,12 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import ProductList from './ProductList';
-import App from '../App';
-
+import SignIn from './SignIn';
+import '../styles/Header2.css';
 function Header() {
 
   return (
-    <Router>
       <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
@@ -20,10 +17,11 @@ function Header() {
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item header-element">
                   <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  {/* <Link to="/" class="nav-link active">Home</Link> */}
                 </li>
                 <li class="nav-item header-element">
                   <a class="nav-link" href='/shop' >Shop</a>
-                  {/* <Link to="/shop" className="nav-link">Shop</Link> */}
+                  {/* <Link to="/shop" class="nav-link">Shop</Link> */}
                 </li>
                 <li class="nav-item header-element">
                   <a class="nav-link" href="#">Categories</a>
@@ -38,19 +36,14 @@ function Header() {
               <div>
                 <img className='header-element' src='./images/e-commerce (1).png' alt='wishlist-img' />
                 <img className='header-element' src='./images/shopping-bag (1).png' alt='cart-img' />
-                <img className='header-element' src='./images/user.png' alt='user-img' />
+                <img className='header-element' src='./images/person.png' alt='user-img' /> {/*<SignIn />*/}
               </div>
               <button class="btn btn-outline-primary me-2">Sign Up</button>
               <button class="btn btn-outline-success me-2">Login</button>
             </div>
           </div>
         </nav>
-        <Routes>
-         
-          <Route path="/shop" element={<ProductList />} />
-        </Routes>
       </div>
-    </Router>
   );
 }
 
