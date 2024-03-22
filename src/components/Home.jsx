@@ -1,5 +1,6 @@
 import Carousel from "./Carousel";
 import Category from "./Category";
+import SignUp from  "./SignUp";
 
 const imgData = [
     { id: 1, src: '../images/landing_page/1.png', alt: 'Image 1' },
@@ -13,6 +14,7 @@ function Home() {
         <div>
             <Carousel images={imgData} />
             <Category />
+            <SignUp />
         </div>
     );
 }

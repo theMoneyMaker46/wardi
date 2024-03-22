@@ -37,20 +37,19 @@
   }
 }
 
-.card {
-  position: relative;
-  margin: 20px 0;
-  border: 0px;
-}
 .card-body {
   text-align: left;
   padding: 10px 0;
 }
 .price {
   text-decoration: line-through;
+  color: #878787;
+  font-family: Roboto,Arial,sans-serif;
 }
+
 .productName {
   font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
 .header-element {
@@ -65,9 +64,5 @@
 .grid {
   display: grid;
   justify-content: center;
-}
-
-.grid .card {
-  margin: 50px;
 }
 
