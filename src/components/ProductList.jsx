@@ -5,10 +5,11 @@ import productDetails from "./ProductDetails";
 const cardStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-    gap: '30px 0px',
+    gap: '30px 0',
     padding: '0 30px',
     position: 'relative',
-    top: '120px'
+    top: '120px',
+    left: '30px',
   };
 
 function ProductList({ updateCartCount }) {
@@ -20,7 +21,7 @@ function ProductList({ updateCartCount }) {
     return (
         <div style={cardStyle}>
           {productDetails.map((productData) => (
-            <Card handleAddToCart={handleAddToCart} key={productData.id} {...productData} />
+          <div href="productPage"><Card handleAddToCart={handleAddToCart} key={productData.id} {...productData} /></div>
           ))}
         </div>
     );

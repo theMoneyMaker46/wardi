@@ -17,24 +17,28 @@ function Card({ handleAddToCart, ...props }) {
   };
   const maxLength = 32;
 
-  const truncatedProductName = props.productName.length > maxLength ? 
-    props.productName.slice(0,maxLength) + '...' : props.productName;
-//brand, productName, price, discountPrice, imgSrc, rating
+  const truncatedProductName = props.productName.length > maxLength ?
+    props.productName.slice(0, maxLength) + '...' : props.productName;
+  //brand, productName, price, discountPrice, imgSrc, rating
+
   return (
     <div className="cardSection">
-      <div className="card" style={{ width: '15rem', textAlign: 'center' }}>
+      <div className="card" style={{ width: '16rem', textAlign: 'center' }}>
         <div>
-          <img style={productImg} src={props.imgSrc} alt="" />
+          <a href={`/product/${props.id}`} className="card-link">
+            <img style={productImg} src={props.imgSrc} alt="" />
+          </a>
           <div className="card-body custom-card-body">
             <h6>{props.brand}</h6>
             <p className="productName">{truncatedProductName}</p>
-            <div>
-              <p>₹{props.discountPrice} <label className="price">₹{props.price}</label> /meter</p>
+            <div className="priceOnCard">
+              <p style={{"margin":"0 0 0.5rem 0"}}>₹{props.discountPrice} <text className="price">₹{props.price}/meter</text>
+              <text style={{"color":"darkorange", "fontWeight":"bold"}}>    (Rs. {props.price-props.discountPrice} off)</text>
+              </p>
             </div>
-            <div>Ratings {props.rating.toFixed(2)}⭐
+            <div><p>Ratings {props.rating.toFixed(2)}⭐</p>
             </div>
-            
-            <button id = "addToCart" className="btn btn-primary" onClick={addToCart}>{isAddedToCart}</button>
+            <button id="addToCart" className="btn btn-success" onClick={addToCart}>{isAddedToCart}</button>
           </div>
         </div>
       </div>
